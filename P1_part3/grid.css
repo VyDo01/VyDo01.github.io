@@ -1,0 +1,101 @@
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.container-fluid .row {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Define the base column class */
+.col-1 {
+    width: 67.5px;
+    margin: 0 15px;
+    float: left;
+}
+
+/* Calculate and define specific column widths from col-2 to col-12 */
+.col-2 {
+    width: 165px; /* (97.5px * 2) - (15px * 2) = 165px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-3 {
+    width: 262.5px; /* (97.5px * 3) - (15px * 2) = 262.5px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-4 {
+    width: 360px; /* (97.5px * 4) - (15px * 2) = 360px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-5 {
+    width: 457.5px; /* (97.5px * 5) - (15px * 2) = 457.5px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-6 {
+    width: 555px; /* (97.5px * 6) - (15px * 2) = 555px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-7 {
+    width: 652.5px; /* (97.5px * 7) - (15px * 2) = 652.5px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-8 {
+    width: 750px; /* (97.5px * 8) - (15px * 2) = 750px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-9 {
+    width: 847.5px; /* (97.5px * 9) - (15px * 2) = 847.5px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-10 {
+    width: 945px; /* (97.5px * 10) - (15px * 2) = 945px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-11 {
+    width: 1042.5px; /* (97.5px * 11) - (15px * 2) = 1042.5px */
+    margin: 0 15px;
+    float: left;
+}
+
+.col-12 {
+    width: 1140px; /* (97.5px * 12) - (15px * 2) = 1140px */
+    margin: 0 15px;
+    float: left;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
