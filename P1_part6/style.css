@@ -1,0 +1,199 @@
+/* style sheet */
+
+ /*blue #6286F7*/ /*light blue #D3DEFF*/
+
+/* universal styling first */
+
+/* box model fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/*
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+*/
+
+.container-fluid {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+header {
+	margin-top: 40px;
+}
+
+header li {
+	margin-left: 110px;
+	color: #6286F7; /*blue*/
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.hello-grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+}
+
+#giant {
+	color: #6286F7; /*blue*/
+	grid-column-start: 1;
+	grid-column-end: 7;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+#intro {
+	grid-column-start: 6;
+	grid-column-end: 7;
+	grid-row-start: 2;
+	grid-row-end: 5;
+}
+
+h1 {
+	font-size: 300px;
+}
+
+h2 {
+	font-size: 25px;
+	line-height: 50px;
+}
+
+h3 {
+	font-size: 60px;
+	margin-left: 200px;
+	margin-top: 150px;
+	color: #6286F7;
+}
+
+hr {
+	color: #6286F7; /*blue*/
+	border: 1.5px solid;
+}
+
+h5 {
+	font-size: 15px;
+	color: #6286F7;
+	margin-bottom: 20px;
+}
+
+#what p {
+	font-size: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: #D3DEFF; /*light blue*/
+  margin: 40px;
+  margin-top: 30px;
+}
+
+.card {
+	width: 18rem;
+} 
+
+.card-img-top { 
+	height: 150px; 
+	object-fit: cover;
+}
+
+.card-text {
+	font-size: 15px;
+}
+
+.btn-outline-primary {
+	border-radius: 25px;
+	color: #6286F7;
+}
+
+.button {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+
+/* 
+@media screen and (###) {
+
+	.mobileFirst .row div {
+		float: left;
+		display: inline-block;
+	}
+
+} */
+
+@media screen and (max-width: 1200px) and (min-width: 390px) {
+	#mobile {
+		
+	}
+
+}
+
+@media screen and (max-width: 390px) {
+	.flex-container{
+		flex-wrap: wrap;
+	}	
+
+	.container {
+		width: auto;
+	}
+
+	#giant h1 {
+		font-size: 120px;
+	}
+
+	.hello-grid {
+		display: block;
+	}
+
+	h3 {
+		margin-left: auto;
+	}
+
+	
+}
+
+
+
+
