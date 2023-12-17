@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Title of the site-->
+	<title>Little Ghost</title>
+
+	<!-- The normalize file first to get rid of all the pesky default properties -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Here is the Bootstrap CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+	    <!-- The font I use is Fira Sans and Libre Baskerville. I went to Google Fonts and copy&pasted the text for Fira Sans and Libre Baskerville into my code. I also need the font family syntax for my CSS: font-family: 'Fire Sans', sans-serif;
+	    	font-family: 'Libre Baskerville', serif;-->
+	    	<link rel="preconnect" href="https://fonts.googleapis.com">
+	    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+	    	<!-- Last is the stylesheet that we want to connect to. This comes last in so that our instructions in the style.css file don't get over-written by other files.-->
+	    	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	    </head>
+	<!-- *********************
+		Below here starts the code that will show up in the browser -->
+
+		<body>
+			<!--Header is the same for all pages  (first)--> 
+			<header class="container-fluid">
+				<div class="container">
+					<nav class="nav navbar-expand-lg">
+						<div class="wrapper">
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+							<a class="navbar-brand" href="index.html" id="logo"><img class="pc-image" src="images/logo.png" width="170" height="170" alt="littleghost logo"><img class="mobile-image" src="images/logover2.png" width="170" height="170" alt="littleghost logo"></a>
+						</div>
+						
+						<div class="collapse navbar-collapse justify-content-center" id="navbarToggler">
+							<ul class="navbar-nav navbar-content">
+								<li class="nav-item"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span><svg xmlns="http://www.w3.org/2000/svg" height="21" width="21" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></span></button></li>
+
+								<li class="nav-item"><a class="hover-link nav-link" href="index.html">Home</a></li>
+
+								<li class="nav-item"><a class="hover-link nav-link" href="menu.html">Menu</a></li>
+
+								<li class="nav-item"><a class="hover-link nav-link" href="crayon.html">Crayon</a></li>
+							</ul>
+						</div>
+
+					</nav>
+				</div>		
+			</header>
+
+			<!--Hero section (second)-->
+			<section class="container-fluid centered-hero">
+				<div class="container">
+					<div class="row">
+						<section id="hero-1400">
+							<h1 class="hero-text-h1">Come join us this winter pop up!</h1>
+							<h3 class="hero-text-h3">December 1-7, 2023</h3>
+							<p class="hero-text-p1">110373-47 False Creek<br>Edmonton</p>
+							<p class="hero-text-p2">Monday to Sunday<br>9am - 4pm</p>
+							<a href="https://www.google.com/maps/search/110373-47+False+Creek+Edmonton/@53.5262273,-113.8223719,10z/data=!3m1!4b1?entry=ttu" class="CTA">Map it</a>
+						</section>
+					</div>
+				</div>
+			</section>
+
+			<!--Introduction (third)-->
+			<section class="container-fluid green-back">
+				<div class="container">
+					<div class="row" id="intro-green">
+						<div>
+							<h2 id="space">Hey outdoorsy folks!</h2>
+							<p>We are a small pop-up cafe business from Edmonton. About once per season we set up a little cafe in an interesting location for one week. Come grab a seat, have some chitchat and fresh air!</p>
+							<p>-We thank you kindly for stopping by-</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!--Intro to menu and crayon section (fourth)-->
+			<section class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6" id="coffee-cheers">
+						<div class="fourth-text">
+							<h2 class="title">Brews + Bites</h2>
+							<p class="text-intro">Explore our menu, find your favorites, and let the<br>symphony of flavors unfold in the heart of our cafe.</p>
+							<a href="menu.html" class="CTA">View menu</a>
+						</div>
+					</div>
+					<div class="col-lg-6" id="crayon-draw">
+						<div class="fourth-text">
+							<h2 class="title">Where coffee meats creativity</h2>
+							<p class="text-intro">To help foster creative conversation, we make<br>custom scented crayons for people to draw with<br>as they talk and drink their coffee. We also sell<br>packs of them at the pop-up.</p>
+							<a href="crayon.html" class="CTA">View crayon</a>
+						</div>
+					</div>			
+				</div>
+			</section>
+
+			<!--top picks section (fifth)-->
+			<section class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 class="green-h2">Our top picks</h2>
+						</div>
+					</div>
+
+					<div class="row gy-4">
+						<div class="col-lg-4 card-break">
+							<div class="card">
+								<h4 class="picks-name-margin">Macchiato</h4>
+								<h5>$7.50</h5>
+								<img class="picks-img" src="images/pick01.png" alt="coffee">
+								<div>
+									<p class="des-margin">Our macchiato is made with a shot of freshly brewed espresso, which gives it a bold and robust coffee flavour.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 card-break">
+							<div class="card">
+								<h4 class="picks-name-margin">Chocolate Cookie</h4>
+								<h5>$1.00</h5>
+								<img class="picks-img" src="images/pick03.png" alt="cookie">
+								<div>
+									<p class="des-margin">Crafted with love and the finest ingredients, our chocolate cookies are a symphony of rich cocoa and melt-in-your-mouth goodness.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 card-break">
+							<div class="card">
+								<h4 class="picks-name-margin">A Pack of Crayons</h4>
+								<h5>$10.00</h5>
+								<img class="picks-img" src="images/pick02.png" alt="pack">
+								<div>
+									<p class="des-margin">Each crayon is carefully handcrafted with a blend of premium waxes and infused with enchanting scents that awaken your senses.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--photos IG display section (sixth)-->
+			<section class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h2 class="green-h2">We are looking forward to seeing you<br>every season!</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col" id="centered-tag">
+							<h4 class="social-green" id="spacing-acc">@Liltleghostcafe #Liltleghostcafe</h4>
+						</div>
+					</div>
+
+					<div class="row gy-4">
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class=" insta-photo">
+								<img class="IG-photos" id="truck" src="images/photo04.jpg" alt="truck">
+								<div class="overlay">
+									<a href="https://www.instagram.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class=" insta-photo">
+								<img class="IG-photos" id="people" src="images/photo05.jpg" alt="people">
+								<div class="overlay">
+									<a href="https://www.instagram.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class=" insta-photo">
+								<img class="IG-photos" id="cup" src="images/photo06.jpg" alt="cupofcoffee">
+								<div class="overlay">
+									<a href="https://www.instagram.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-6 col-6">
+							<div class=" insta-photo">
+								<img class="IG-photos" id="IG-crayon" src="images/photo07.jpg" alt="crayons">
+								<div class="overlay">
+									<a href="https://www.instagram.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!--sign up (eighth)-->
+			<section class="container-fluid sign-up-img">
+				<div class="container">
+					<div class="row">
+						<h2>Sign up for our location updates!</h2>
+						<div>
+							<input id="sign-up-button" type="email" placeholder ="Email">
+							<svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e2" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--footer is the same for all pages-->
+			<section class="container-fluid footer-back">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-12 footer-style" id="logo-footer">
+							<a href="index.html"><img id="logo-footer-mobile" src="images/footer.png" alt="logo"></a>
+						</div>
+
+						<div class="col-lg-3 col-md-12 footer-style margin-footer text-center text-lg-start">
+							<h6>Contact Us</h6>
+							<ul class="footer-bullet">
+								<li>780-999-6464</li>
+								<li>Cafe@Littleghost.ca</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 footer-style margin-footer text-center text-lg-start">
+							<h6>Information</h6>
+							<ul class="footer-bullet">
+								<li>Menu</li>
+								<li>Crayon</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 footer-style margin-footer text-center text-lg-start">
+							<h6 id="margin-followus">Follow Us</h6>
+							<a id="icon-margin" href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" height="27" width="27" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg></a>
+							<a href="https://twitter.com/?lang=en"><svg xmlns="http://www.w3.org/2000/svg" height="27" width="27" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path fill="#fff6e3" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg></a>
+						</div>
+					</div>
+
+					<div class="row centered-copyright mt-5">
+						<div class="col">
+							<p>© 2023 Little Ghost, all rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>	
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		</body>
+		</html>

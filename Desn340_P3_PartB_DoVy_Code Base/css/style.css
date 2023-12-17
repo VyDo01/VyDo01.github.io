@@ -1,0 +1,807 @@
+/* Stylesheet for Little Ghost web design*/
+
+/* Other notes for the design*/
+/* Colours
+#FFF6E2: beige
+#677356: green
+#865B3E: brown
+#FC7931: orange
+#001347: dark blue
+#FFC85D: yellow
+#C7281D: red
+*/
+
+/* Fonts and size
+Nav: Fira Sans- Medium - 29pt
+H1: Libre Baskerville - Bold - 50pt
+H2: Libre Baskerville - Bold - 45pt
+H3: Libre Baskerville - Bold - 37pt
+H4: Fira Sans - Medium - 35pt
+H5, Button: Fira Sans - SemiBold- 29pt
+Body: Fira Sans- Regular - 29pt, Line Spacing: 37pt
+Descriptions Menu: Fira Sans- Regular - 21pt, Line Spacing: 32pt
+H6, Footer: Fira Sans - Regular - 25pt
+*/
+
+
+/* This section is for universal selections and rules */
+
+/* Global styling*/
+
+body {
+	background-color: #FFF6E2;
+}
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+/* type hierachy style */
+
+h1 {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: #FFF6E2;
+}
+
+h2 {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+	font-size: 1.6rem;
+	color: #FFF6E2;
+}
+
+h3 {
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: #FFF6E2;
+}
+
+h4 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	font-size: 1.2rem;
+	color: #FFF6E2;
+}
+
+h5 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	color: #FFF6E2;
+}
+
+h6 {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+	color: #FFF6E2;
+}
+
+p {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	color: #FFF6E2;
+}
+
+.row img {
+	width: 100%;
+}
+
+a.CTA {
+	background-color: #FFF6E2;
+	color: #865B3E;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 600;
+	border-radius: 2em;
+	align-self: baseline;
+	text-decoration: none;
+	padding: 0.75em 1.5em;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.CTA {
+	background-color: #FFF6E2;
+	color: #865B3E;
+}
+
+.CTA:hover {
+	background-color: #865B3E;
+	color: #FFF6E2;
+}
+
+
+/***************************************************/
+
+/*_____________________Header styles ______________________*/
+
+
+#logo{
+	max-height: 90px;
+}
+
+#logo img {
+	position: relative;
+	bottom: 2rem;
+}
+
+#navbarToggler{
+	margin-right: 9rem;
+	margin-bottom: 5rem;
+}
+
+.navbar-nav .nav-item {
+	margin-right: 100px; /* Adjust the spacing between nav items */
+	margin-bottom: 2rem;
+}
+
+.navbar-toggler-icon{
+	/*background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");*/
+	background-image: url("../images/collapsed.svg");
+	width: 35px;
+	height: 35px;
+}
+
+header {
+	background-color: #865B3E;
+	height: 100px;
+}
+
+nav ul {
+	margin-top: 30px;
+}
+
+.hover-link {
+	color: #FFF6E2;
+	text-decoration: none;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 500;
+}
+
+.hover-link:hover {
+	color: #FFF6E2;
+	opacity: .6;
+}
+
+.mobile-image {
+	display: none;
+	width: 170px;
+}
+
+/*_____________________Homepage styles ______________________*/
+
+/* hero styles */
+.centered-hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url("../images/photo01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 26%;
+	height: 86vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text-h1 {
+	margin-top: -4rem;
+}
+
+.hero-text-h3 {
+	margin-top: 2rem;
+}
+
+.hero-text-p1 {
+	margin-top: 2rem;
+}
+
+.hero-text-p2 {
+	margin-top: -0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+/* intro "hey outdoorsy folks" styles */
+.green-back {
+	background-image: url("../images/leaf01.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 10%;
+	height: 22rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#intro-green {
+	justify-content: center;
+}
+
+#intro-green > div {
+	width: 38vw;
+}
+
+#space {
+	margin-top: -1rem;
+	margin-bottom: 1.5rem;
+}
+
+/* intro to menu and crayon styles */
+#coffee-cheers{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/photo02.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 45%;
+	height: 80vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	transition: 0.7s;
+}
+
+#crayon-draw {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/photo03.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 80%;
+	height: 80vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.fourth-text {
+	margin-top: 13rem;
+}
+
+.title {
+	margin-bottom: 1.5rem;
+}
+
+.text-intro {
+	margin-bottom: 2rem;
+}
+
+
+/* top picks styles */
+.green-h2 {
+	color: #677356;
+	text-align: center;
+	margin-top: 4.5rem;
+	margin-bottom: 2rem;
+}
+
+.card {
+	background-color: #677356;
+	height: 28rem;
+	border-radius: 2rem;
+	border-style: none;
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+.card-break {
+	justify-content: center;
+	display: flex;
+}
+
+.card-break .card > div {
+	width: 65%;
+}
+
+.picks-img {
+	width: 15rem;
+	height: 15rem;
+	object-fit: contain;
+	margin-top: -1.6rem;
+}
+
+.picks-name-margin {
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.des-margin {
+	margin-top: -1.3rem;
+}
+
+/* instagram photos styles */
+.social-green {
+	color: #677356;
+	margin-bottom: 2rem;
+}
+
+.IG-photos {
+	border-radius: 2rem;
+}
+
+#centered-tag {
+	text-align: center;
+}
+
+#spacing-acc {
+	word-spacing: 3rem;
+}
+
+.insta-photo {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 2rem;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+.insta-photo:hover .overlay {
+	opacity: 1;
+}
+
+
+/* sign up styles */
+.sign-up-img {
+	background-image: url("../images/leaf02.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 15rem;
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+#sign-up-button {
+	border: 1.5px solid #FFF6E2;
+	border-radius: 2em;
+	width: 20rem;
+	height: 3rem;
+	background-color: rgba(0,0,0,0);
+	padding-left: 1rem;
+	margin-top: 2rem;
+	opacity: .5;
+	transition-duration: 0.4s;
+}
+
+#sign-up-button:hover {
+	opacity: 1;
+}
+
+#sign-up-button + svg {
+	position: relative;
+	right: 2rem;
+	top: -0.1rem;
+}
+
+#sign-up-button::placeholder {
+	color: #FFF6E2;
+	opacity: .5;
+	Font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+}
+
+input {
+	outline: none;
+}
+
+/*_____________________Menu styles ______________________*/
+
+/* hero menu style */
+#hero-menu {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url("../images/photo08.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 48%;
+	height: 86vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* menu styles */
+.green-h2-menu {
+	color: #677356;
+	margin-top: 4.5rem;
+	margin-bottom: 2rem;
+}
+
+.menu-list {
+	color: #677356;
+}
+
+.menu-list-des {
+	font-size: 0.8rem;
+	color: #677356;
+	padding: 0rem 2rem 2rem 0;
+}
+
+.margin-list {
+	margin-top: 8.5rem;
+}
+
+.grid-container {
+	display: grid;
+	grid-auto-rows: minmax(10vh, min-content);
+	grid-template-columns: 2fr 1fr 2fr;
+}
+
+.grid-item {
+
+}
+
+.grid-first-col {
+/*	background-color: lime;*/
+padding: 1rem 1rem 0 0;
+
+}
+
+
+.grid-second-col {
+/*	background-color: orchid;*/
+padding: 1rem 1rem 0 0;
+}
+
+.grid-third-col {
+/*	background-color: azure;*/
+}
+
+.grid-third-col img {
+	width: 45%;
+}
+
+#second-menu-img {
+	width: 40%;
+}
+
+
+/*_____________________Crayon styles ______________________*/
+/* hero crayon styles */
+#hero-crayon {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/photo09.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 1%;
+	height: 86vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero-crayon-break {
+	justify-content: center;
+}
+
+#hero-crayon-des p {
+	width: 30vw;
+}
+
+/* crayon choices styles */
+.card-crayon {
+	height: 28rem;
+	border-radius: 2rem;
+	border: 0.1rem solid;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.green-text-and-border {
+	color: #677356;
+}
+
+.card-break-crayon {
+	justify-content: center;
+	display: flex;
+}
+
+.card-break-crayon .card-crayon > div {
+	width: 75%;
+}
+
+.orange-text-and-border {
+	color: #FC7931;
+}
+
+.brown-text-and-border {
+	color: #865B3E;
+}
+
+.blue-text-and-border {
+	color: #001347;
+}
+
+.yellow-text-and-border {
+	color: #FFC85D;
+}
+
+.red-text-and-border {
+	color: #C7281D;
+}
+
+#margin-crayons {
+	margin-top: 0.2rem;
+	margin-bottom: 6rem;
+}
+
+/*_____________________Footer styles ______________________*/
+
+.footer-back {
+	background-color: #865B3E;
+	margin-top: 2rem;
+}
+
+.footer-bullet {
+	list-style-type: none;
+	margin-left: -2rem;
+	color: #FFF6E2;
+}
+
+.footer-style {
+	color: white;
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFF6E2;
+}
+
+#margin-followus {
+	margin-bottom: 1.2rem;
+}
+
+#logo-footer {
+	margin-top: -1rem;
+}
+
+.margin-footer {
+	margin-top: 5.5rem;
+}
+
+.footer-bullet > li {
+	margin-top: 1.2rem;
+	font-size: 0.9rem;
+	margin-bottom: -0.6rem;
+}
+
+.centered-copyright {
+	text-align: center;
+	color: white;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0.7rem;
+	opacity: .8;
+}
+
+#icon-margin {
+	margin-right: 0.3rem;
+}
+
+
+
+
+/* MEDIA QUERIES */
+/***************************************************/
+/************* style for tablet **************/
+
+/* 986px and down */
+@media screen and (max-width: 986px) {
+	
+	/****** homepage styles *******/
+	
+	#navbarToggler {
+		padding-left: 2rem;
+		height: 100vh;
+		background-color: #677356;
+		min-width: 100vw;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+
+	.navbar-content {
+		height: 100vh;
+		background-color: #677356;
+	}
+
+	.pc-image {
+		display: none;
+	}
+
+	.mobile-image {
+		display: block;
+		width: 170px;
+	}
+
+	#logo{
+		display: inline-flex;
+		width: 80vw;
+		justify-content: center;
+	}
+
+	.wrapper {
+		display: flex;
+	}
+
+	.hover-link:hover {
+		color: #FFF6E2;
+		opacity: 1;
+	}	
+
+	.card {
+		width: 25rem;
+	}
+
+	.card-break .card > div {
+	width: 70%;
+	}
+
+	.overlay {
+		display: none;
+	}
+
+	#logo-footer-mobile {
+		width: 100%;
+		height: 20rem;
+		object-fit: contain;
+		text-align: center;
+		margin-bottom: -5rem;
+	}
+
+
+	/******* menu page styles *******/
+
+	.grid-container {
+		grid-auto-rows: minmax(10vh, min-content);
+		grid-template-columns: 4fr 0.2fr 3fr;
+
+	}
+
+	.menu-list-des {
+		padding: 0 1rem 1rem 0;
+	}
+
+	.grid-container img {
+		width: 80%;
+	}
+
+	#second-menu-img {
+		width: 80%;
+	}
+
+
+	/******* crayon page styles *******/
+
+	.card-crayon {
+		width: 25rem;
+	}
+
+	.card-break-crayon .card-crayon > div {
+	width: 70%;
+	}
+
+}
+
+/* 391px to 768px */
+@media screen and (min-width: 391px) and (max-width: 768px) {
+
+	/***** homepage styles *******/
+
+	#intro-green > div {
+		width: 55vw;
+	}
+
+	.fourth-text {
+		margin-top: 18rem;
+	}
+
+	.sign-up-img {
+		background-image: url("../images/leaf02mobile.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 15rem;
+		margin-top: 5rem;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+
+	.CTA:hover {
+		background-color: #FFF6E2;
+		color: #865B3E;
+	}
+
+	/***** menu page styles *******/
+	.grid-container {
+		grid-template-columns: 3fr 0.2fr 1fr;
+
+	}
+
+	/***** crayon page styles *******/
+
+}
+
+
+/************ style for mobile *************/
+
+/* 390px and down */
+@media screen and (max-width: 390px) {
+	
+	/***** homepage styles *******/
+
+	#intro-green > div {
+		width: 80vw;
+	}
+
+	.green-back {
+		background-image: url("../images/leaf01mobile.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-y: 10%;
+		height: 22rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.IG-photos {
+		border-radius: 1.5rem;
+	}
+
+	.sign-up-img {
+		background-image: url("../images/leaf02mobile.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 15rem;
+		margin-top: 5rem;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+
+
+
+}
+
+	/***** menu page styles *****/
+
+
+
+
+
+
+
+
+
+
